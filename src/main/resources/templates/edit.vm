@@ -1,0 +1,6 @@
+#controlHeader ($action $customField.id $customField.name $fieldLayoutItem.required $displayParameters.noHeader)
+<input type="text"
+       name="$customField.id"
+       value="$!value" />
+<span id="s3-upload">S3 presigned </span>
+#controlFooter ($action $fieldLayoutItem.fieldDescription $displayParameters.noHeader)

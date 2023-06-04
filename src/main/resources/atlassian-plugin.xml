@@ -17,8 +17,20 @@
         <resource type="download" name="s3Field.css" location="/css/s3Field.css"/>
         <resource type="download" name="s3Field.js" location="/js/s3Field.js"/>
         <resource type="download" name="images/" location="/images"/>
-
+        <context>atl.general</context>
+        <context>atl.admin</context>
         <context>s3Field</context>
     </web-resource>
-    
+
+    <customfield-type key="s3-upload-field" name="S3 Upload Field"
+                      class="net.runsystem.s3field.S3UploadField">
+        <description>S3 Upload Field support super large files</description>
+        <resource type="velocity" name="view" location="templates/plugins/fields/view/view-basictext.vm"/>
+        <resource type="velocity" name="edit" location="templates/edit.vm"/>
+        <resource type="velocity" name="xml" location="templates/plugins/fields/xml/xml-basictext.vm"/>
+    </customfield-type>
+
+    <rest key="s3Field" path="/s3-field" version="1.0">
+        <description>My plugin's REST API</description>
+    </rest>
 </atlassian-plugin>
