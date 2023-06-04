@@ -31,6 +31,6 @@
     </customfield-type>
 
     <rest key="s3Field" path="/s3-field" version="1.0">
-        <description>My plugin's REST API</description>
+        <description>S3 Upload presigned URL generator</description>
     </rest>
 </atlassian-plugin>
